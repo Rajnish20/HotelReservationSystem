@@ -1,2 +1,8 @@
 com/magic/hotelreservation/Main.java
  com.magic.hotelreservation.Main
+com/magic/hotelreservation/Hotels.java
+ com.magic.hotelreservation.Hotels
+com/magic/hotelreservation/HotelReservation.java
+ com.magic.hotelreservation.HotelReservation
+com/magic/hotelreservation/IHotelReservation.java
+ com.magic.hotelreservation.IHotelReservation
