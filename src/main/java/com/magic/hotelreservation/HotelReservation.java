@@ -12,6 +12,18 @@ public class HotelReservation implements IHotelReservation{
     }
 
     @Override
+    public Hotels findCheapestHotel(List<String> dates) {
+        Hotels hotel = hotels.get(0);
+        for (int i = 1; i < hotels.size(); i++) {
+            if (hotel.getRate() > hotels.get(i).getRate())
+                hotel = hotels.get(i);
+        }
+        int price = dates.size() * hotel.getRate();
+        return new Hotels(hotel.getName(),price);
+    }
+
+
+    @Override
     public int getSize() {
         return this.hotels.size();
     }
