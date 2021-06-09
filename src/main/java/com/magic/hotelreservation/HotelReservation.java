@@ -7,9 +7,10 @@ public class HotelReservation implements IHotelReservation{
 
     List<Hotels> hotels = new ArrayList<>();
     @Override
-    public void addHotel(String name, Integer rate) {
-        hotels.add(new Hotels(name, rate));
+    public void addHotel(String name, Integer weekdaysRate,Integer weekendRate){
+        hotels.add(new Hotels(name, weekdaysRate,weekendRate));
     }
+
 
     @Override
     public int getSize() {
