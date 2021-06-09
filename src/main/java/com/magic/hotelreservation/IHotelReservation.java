@@ -3,9 +3,11 @@ package com.magic.hotelreservation;
 import java.util.List;
 
 public interface IHotelReservation {
-    void addHotel(String name, Integer rate);
+    void addHotel(String name, Integer weekendRate, Integer weekdaysRate, Integer weekendRateSpl, Integer weekdayRateSpl, Integer ratings);
 
-    Hotels findCheapestHotel(List<String> dates);
+    Response findCheapestHotel(List<String> dates, String customerType);
+
+    Response findBestRatedHotel(List<String> dates, String customerType);
 
     int getSize();
 }

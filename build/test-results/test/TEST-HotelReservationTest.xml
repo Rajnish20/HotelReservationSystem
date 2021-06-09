@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-09T07:07:18" hostname="DESKTOP-38KI29F" time="0.029">
+<testsuite name="HotelReservationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-06-09T15:48:54" hostname="DESKTOP-38KI29F" time="0.092">
   <properties/>
-  <testcase name="givenDates_ShouldReturnCheapestPrice()" classname="HotelReservationTest" time="0.029"/>
-  <system-out><![CDATA[Hotels{name='LakeWood', rate=220}
-]]></system-out>
+  <testcase name="givenDatesForSpecialCustomer_ShouldReturnBestRatedPrice()" classname="HotelReservationTest" time="0.072"/>
+  <testcase name="givenDatesForRegularCustomer_ShouldReturnBestRatedCheapestPrice()" classname="HotelReservationTest" time="0.005"/>
+  <testcase name="givenNameAndRate_AddedToList_ShouldReturnSizeThree()" classname="HotelReservationTest" time="0.001"/>
+  <testcase name="givenDatesForSpecialCustomer_ShouldReturnBestRatedCheapestPrice()" classname="HotelReservationTest" time="0.004"/>
+  <testcase name="givenDatesForRegularCustomer_ShouldReturnBestRatedPrice()" classname="HotelReservationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
